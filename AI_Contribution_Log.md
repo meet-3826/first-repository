@@ -68,3 +68,27 @@ the user until an exit command is given.
 
 **Verification:** The code will be run in VS Code to check whether the
 chatbot accepts user input and exits correctly.
+## Contribution ID: 004
+
+**File:** agent.py
+
+**AI Tool:** GitHub Copilot
+
+**Prompt:** Add predefined responses for common questions about AI,
+Python, Git, C, and algorithms. Keep the chatbot beginner-friendly
+and rule-based.
+
+**AI Contribution:** Copilot added a predefined response system using
+keywords and corresponding answers for AI, Python, Git, C programming,
+and data structures/algorithms.
+
+**Accepted:** Yes
+
+**My Action:** I reviewed the generated responses and tested the
+chatbot with questions about each supported topic.
+
+**Modification:** The existing exit command and conversation history
+were kept unchanged.
+
+**Verification:** I tested the chatbot with multiple questions and
+confirmed that the appropriate predefined responses were displayed.
