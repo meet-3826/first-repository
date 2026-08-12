@@ -1,54 +1,29 @@
-# AI Study Assistant
-# This program identifies the topic of a student's question
-# and provides a simple response.
+def chatbot():
+    """Simple chatbot REPL.
 
-def identify_topic(question):
-    question_lower = question.lower()
-
-    programming_keywords = [
-        "code", "programming", "python", "java",
-        "debug", "algorithm", "function"
-    ]
-
-    for keyword in programming_keywords:
-        if keyword in question_lower:
-            return "programming"
-
-    math_keywords = [
-        "math", "mathematics", "algebra",
-        "geometry", "calculus", "equation", "number"
-    ]
-
-    for keyword in math_keywords:
-        if keyword in question_lower:
-            return "mathematics"
-
-    return "general study"
-
-
-def get_response(topic):
-    if topic == "programming":
-        return "It sounds like a programming question. Try breaking the problem into smaller steps."
-
-    elif topic == "mathematics":
-        return "This seems like a math question. Review the concept and solve it step by step."
-
-    else:
-        return "This looks like a general study question. Stay organized and revise your notes regularly."
-
-
-def main():
-    print("Welcome to the AI Study Assistant!")
-    print("Ask a question about programming, mathematics, or general study.")
-
-    user_question = input("\nWhat is your question? ")
-
-    topic = identify_topic(user_question)
-    response = get_response(topic)
-
-    print("\nAssistant response:")
-    print(response)
+    - Type messages to interact.
+    - Use `exit` or `quit`, or press Ctrl-C / Ctrl-D to stop.
+    """
+    print("Simple AI agent. Type 'exit' or 'quit' to stop.")
+    history = []
+    try:
+        while True:
+            user = input("You: ").strip()
+            if not user:
+                continue
+            if user.lower() in ("exit", "quit"):
+                print("Bot: Goodbye!")
+                break
+            if user.endswith("?"):
+                reply = "That's an interesting question."
+            else:
+                reply = f"I heard: {user}"
+            history.append(("User", user))
+            history.append(("Bot", reply))
+            print("Bot:", reply)
+    except (KeyboardInterrupt, EOFError):
+        print("\nBot: Goodbye!")
 
 
 if __name__ == "__main__":
-    main()
+    chatbot()

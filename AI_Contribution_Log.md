@@ -48,3 +48,23 @@ be accepted without checking it. I reviewed the generated code,
 corrected formatting issues, tested the program and documented the
 AI contribution. The Contribution Log provides transparency about
 the use of AI during development.
+## Contribution ID: 001
+
+**File:** agent.py
+
+**AI Tool:** GitHub Copilot
+
+**Prompt:** Create an infinite chatbot loop that takes input from the user.
+
+**AI Contribution:** Copilot modified `agent.py` and created a simple
+chatbot REPL with a continuous input loop and exit handling.
+
+**Accepted:** Yes
+
+**Modification:** I reviewed the generated code before testing it.
+
+**Reason:** The loop allows the chatbot to continuously interact with
+the user until an exit command is given.
+
+**Verification:** The code will be run in VS Code to check whether the
+chatbot accepts user input and exits correctly.
