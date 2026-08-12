@@ -58,6 +58,16 @@ def chatbot():
                 print("Bot: Goodbye!")
                 break
 
+            if user.lower() == "help":
+                print("Bot: Available topics:")
+                print("1. AI")
+                print("2. Python")
+                print("3. Git")
+                print("4. C Programming")
+                print("5. Data Structures and Algorithms")
+                print("Type 'exit' or 'quit' to stop.")
+                continue
+
             # Rule-based predefined responses for common beginner topics
             user_lower = user.lower()
             reply = None
