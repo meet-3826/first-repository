@@ -76,12 +76,13 @@ def chatbot():
                     reply = text
                     break
 
-            # Fallback behavior if no predefined reply matched
-            if reply is None:
-                if user.endswith("?"):
-                    reply = "That's an interesting question."
-                else:
-                    reply = f"I heard: {user}"
+
+                if reply is None:
+                    reply = (
+                    "Error: Information about this topic is not available. "
+                    "Please ask about AI, Python, Git, C Programming, "
+                    "or Data Structures and Algorithms."
+                    )
             history.append(("User", user))
             history.append(("Bot", reply))
             print("Bot:", reply)
