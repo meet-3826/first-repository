@@ -1,48 +1,25 @@
-# AI Augmented Workflow - Basic AI Agent
+# SLE-2: Profiling Report – 8-Puzzle Search
 
-## Project Objective
+## Course
+02AML204 – Introduction to Artificial Intelligence
 
-The objective of this project is to demonstrate responsible use of
-AI-assisted coding using GitHub Copilot. A simple rule-based chatbot
-was developed, tested, documented, and maintained using Git and GitHub.
+## Student Details
+- Name: Meet Shah
+- PRN: 25UAM129
+- Division: B
 
-## Tools Used
+## Objective
+The objective of this SLE-2 is to compare the performance of two search algorithms on the same 8-puzzle problem using real profiling data.
 
-- Visual Studio Code
-- Python
-- Git
-- GitHub
-- GitHub Copilot
+## Algorithms Compared
+- Breadth-First Search (BFS)
+- A* Search using Manhattan Distance heuristic
 
-## AI Tool Used
+## Problem Used
+8-Puzzle (3 × 3 sliding-tile puzzle)
 
-GitHub Copilot was used to assist in generating and improving parts
-of the chatbot code. The generated code was reviewed, modified where
-necessary, and tested before being accepted.
-
-## Main File
-
-`agent.py`
-
-The `agent.py` file contains the basic chatbot agent. It accepts
-messages from the user and provides predefined responses for common
-topics such as AI, Python, Git, C programming, and data structures.
-
-## Features
-
-- Continuous conversation loop
-- Predefined responses for common topics
-- Exit commands using `exit` or `quit`
-- Basic conversation history
-- Handles empty input
-- Simple fallback response for unknown questions
-
-## How to Run
-
-1. Install Python 3.
-2. Open the project folder in VS Code.
-3. Open `agent.py`.
-4. Run the program using:
-
+### Start State
 ```text
-python agent.py# My First Repository
+8 6 7
+2 5 4
+3 0 1
