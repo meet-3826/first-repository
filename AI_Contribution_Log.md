@@ -7,7 +7,7 @@
 ## Student Details
 - Name: Meet Shah
 - PRN: 25UAM129
-- Course: 02AML204 – Introduction to Artificial Intelligence
+- Division: B
 
 ## AI Contribution
 - Helped me understand the SLE-2 requirements and select BFS vs A* for the 8-puzzle.
